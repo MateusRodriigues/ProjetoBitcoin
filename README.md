@@ -79,6 +79,11 @@ Este projeto permite consultar o preço atual do Bitcoin e sua variação nas ú
      ```csharp
      var connectionString = "Server=MATEUS;Database=CoinGeckoDb;Integrated Security=True";
      ```
+   - Junto com o endpoint que pegamos do site da API.
+     ```csharp
+     var apiUrl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true";
+     ```
+var apiUrl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true";
 
    - **Importante**: Substitua `MATEUS` pelo nome do seu servidor de banco de dados, e `CoinGeckoDb` pelo nome do banco de dados que você criou.
 
