@@ -3,28 +3,28 @@
     partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button buttonConsultarDados;
-        private System.Windows.Forms.Button buttonGravarDados;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecoAtual;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecoAnterior;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnVariacao;
-        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.DataGridView dataGridView1;  // Grid para exibir os dados
+        private System.Windows.Forms.Button buttonConsultarDados;  // Botão para consultar dados da API
+        private System.Windows.Forms.Button buttonGravarDados;  // Botão para gravar dados no banco de dados
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnData;  // Coluna para exibir data
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecoAtual;  // Coluna para exibir preço atual
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecoAnterior;  // Coluna para exibir preço anterior
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnVariacao;  // Coluna para exibir variação do preço
+        private System.Windows.Forms.Label labelTitle;  // Título da aplicação
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Limpa os recursos utilizados.
         /// </summary>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
-                components.Dispose();
+                components.Dispose();  // Libera os componentes utilizados
             }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código gerado pelo Designer do Windows Form
 
         private void InitializeComponent()
         {
@@ -150,6 +150,7 @@
             // 
             // Form1
             // 
+            AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(674, 381);
             Controls.Add(labelTitle);
             Controls.Add(buttonGravarDados);
@@ -157,8 +158,10 @@
             Controls.Add(dataGridView1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Consulta Bitcoin";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
