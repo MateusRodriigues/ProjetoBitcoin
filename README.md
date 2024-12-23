@@ -32,14 +32,10 @@ Este projeto permite consultar o preço atual do Bitcoin e sua variação nas ú
    - Vá para [CoinGecko API](https://www.coingecko.com/en/api).
    
 2. **Criação da chave de API**:
-   - Clique em "Get Started" e crie uma conta.
-   - Após a criação da conta, acesse sua dashboard e gere uma chave de API.
-   
-3. **Utilização da chave demo**:
-   - CoinGecko fornece uma chave demo para testes, sem necessidade de um token pessoal.
-   - Você pode usar essa chave diretamente na URL da API.
+   - Clique em Produtos > API de criptomoedas, e em seguida 'Pegue sua chave API'.
+   - Vá na opção para acessar o painel de desenvolvedor, e após criação da conta, conseguirá gerar sua chave demo. No caso, para o endpoint que utilizei não foi necessário o uso da chave.
 
-4. **Acessando os Endpoints da API**:
+3. **Acessando os Endpoints da API**:
    - Para acessar os dados de preço e variação do Bitcoin, você deve usar o seguinte endpoint:
      ```bash
      https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true
@@ -47,7 +43,7 @@ Este projeto permite consultar o preço atual do Bitcoin e sua variação nas ú
    - Este endpoint retornará os dados de preço do Bitcoin em USD e a variação nas últimas 24 horas.
 
 5. **Documentação da API**:
-   - A documentação completa da API CoinGecko pode ser acessada [aqui](https://docs.coingecko.com/v3.0.1/reference/simple-price).
+   - A documentação completa da API CoinGecko pode ser acessada [aqui](https://docs.coingecko.com/v3.0.1/reference/simple-price). Este foi o local que utilizei para gerar o endpoint acima, mas há vários outros com diferentes retornos.
 
 ## Como Configurar a Conexão com o Banco de Dados
 
